@@ -124,7 +124,7 @@ public class WeatherUtility
     public String latWeather()
     {
         getLocation(0);
-        String wapi = "http://api.openweathermap.org/data/2.5/forecast?lat=" + latitude + "&lon=" + longitude + "&units=imperial&mode=xml&appid=6ee606a8d671c5b28060f5bd4eb31d7c";
+        String wapi = "http://api.openweathermap.org/data/2.5/forecast?lat=" + latitude + "&lon=" + longitude + "&units=imperial&mode=xml&appid=ThisHasBeenAlyeredToHideTheKey";
         return wapi;
     }
     
@@ -132,7 +132,7 @@ public class WeatherUtility
     {
         int zip= 900001;
         zip = i;
-        String wapi = "http://api.openweathermap.org/data/2.5/forecast?zip="+ zip +"&units=imperial&mode=xml&appid=6ee606a8d671c5b28060f5bd4eb31d7c";
+        String wapi = "http://api.openweathermap.org/data/2.5/forecast?zip="+ zip +"&units=imperial&mode=xml&appid=ThisHasBeenAlyeredToHideTheKey";
         zipApi = "http://maps.googleapis.com/maps/api/geocode/xml?address=" + zip;
         getLocation(1);
         //System.out.println(state);
